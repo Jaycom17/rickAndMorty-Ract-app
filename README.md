@@ -17,7 +17,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina:
    Abre tu terminal y clonar el repositorio:
 
    ```bash
-   git clone 
+   git clone https://github.com/Jaycom17/rickAndMorty-Ract-app.git
    ```
 
 2. **Instalar todas las dependencias:**
