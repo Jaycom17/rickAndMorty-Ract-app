@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.prev-next {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.prev-next button {
+  width: 10%;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #656565; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.prev-next button:hover {
+  background-color: #797979; /* Cambia el color de fondo al pasar el cursor */
+}
+
+@media (max-width: 1500px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .prev-next button {
+        width: 20%;
+      }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .prev-next button {
+        width: 40%;
+      }
+}

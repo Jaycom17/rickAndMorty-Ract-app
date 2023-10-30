@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  width: 90%;
+  border: 1px solid #444;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 150px; /* Ancho de la imagen ajustado */
+  height: auto;
+  border-radius: 5px 0 0 5px; /* Bordes redondeados solo en la esquina izquierda */
+  padding: 10px;
+}
+
+.card-body {
+  flex: 1; /* El contenido ocupa todo el espacio disponible */
+  padding: 10px;
+  color: #fff; /* Texto en blanco para contraste */
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.card p .dead::before {
+    content: "💀";
+}
+
+.card p .alive::before {
+    content: "🤫";
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card .card-body .status{
+    margin: 4px;
+}
+
+.card .card-body .title{
+    color: #dfdfdf;
+    margin-left: 10px;
+}
+
+.card .card-body .text{
+    color: #cacaca;
+    margin-left: 12px;
+}
